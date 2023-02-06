@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Rick Roll </title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="navbar">
+                <img src="rick play.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Memes</a></li>
+                    <li><a href="#">Video</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="left-col">
+                    <h1>YOU'VE<br> BEEN <br>RICK<br> ROLLED
+                    </h1>
+                </div>
+
+                <div class="right-col">
+                    <p>Click Here To Listien</p>
+                    <img src="play button.png" id="icon"> 
+
+            </div>
+        
+ 
+            </div>
+
+            <audio id="ricksong">
+
+            <source src="Never Gonna Give You Up Original.mp3" type="audio/mp3">
+            </audio>
+
+            <script>
+                var ricksong = document.getElementById("ricksong");
+                var icon = document.getElementById("icon");
+
+                icon.onclick = function(){
+                    ricksong.play();
+                }
+            </script>
+    
+
+            
+
+
+
+    </body>
+
+
+
+
+</html>
